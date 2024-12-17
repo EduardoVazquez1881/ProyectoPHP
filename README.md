@@ -5,6 +5,7 @@
 # Crear Proyecto
 
 - Tenemos que dirigirnos a la ruta en donde crearemos nuestro proyecto para ingresar el siguiendo comando:
-  ```symfony new nombre_proyecto --webapp
-  a
+  ```
+  git push -u origin main
+
 
