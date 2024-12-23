@@ -1,0 +1,8 @@
+{
+    "twig.namespace": {
+        "App": "templates/"
+    },
+    "emmet.includeLanguages": {
+        "twig": "html"
+    }
+}
