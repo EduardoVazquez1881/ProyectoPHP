@@ -27,6 +27,32 @@
   php bin/console tailwind:build -w
   ```
 
+  # Conexion
+  En este caso usaremos mysql, tenemos que configurar el archivo .env, buscamos la opcion de "DATABASE_URL" y descomentamos la de nuestra base de datos. Modificamos el nombre de usuario, contraeña y el nombre de la base de datos.
+
+  # Entidades 
+  Comenzamos con la creacion de las entidades mediante el comando
+  
+  ```
+  php bin/console make:entity
+  ```
+  Nos pedira ingresar nombre, variables, tipo de datos, etc.
+
+  # Migraciones
+  Despues de crear las entidades, debemos de comenzar generando las migraciones
+  ```
+  php bin/console doctrine:migrations:generate
+  ```
+  Aplicamos las migraciones
+  ```
+  php bin/console doctrine:migrations:migrate
+  ```
+  Verificamos si la migracion se realizo correctamente y verificamos si en la base de datos se realizaron los cambios (Recuerda que el nombre de la base de datos debe de ser la misma de la configuracion de symfony y mysql)
+  ```
+  php bin/console doctrine:migrations:status
+  ```
+  
+
   
   
   
