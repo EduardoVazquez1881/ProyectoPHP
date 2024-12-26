@@ -45,6 +45,10 @@
   ```
   Nos pedira ingresar nombre, variables, tipo de datos, etc.
 
+  # Creacion de usuarios
+  php bin/console make:user
+  
+
   # Migraciones
   Despues de crear las entidades, debemos de comenzar generando las migraciones
   ```
@@ -52,6 +56,7 @@
   ```
   Aplicamos las migraciones
   ```
+  php bin/console make:migration
   php bin/console doctrine:migrations:migrate
   ```
   Verificamos si la migracion se realizo correctamente y verificamos si en la base de datos se realizaron los cambios (Recuerda que el nombre de la base de datos debe de ser la misma de la configuracion de symfony y mysql)
