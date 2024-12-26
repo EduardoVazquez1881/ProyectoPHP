@@ -39,7 +39,8 @@
   # Entidades 
   Comenzamos con la creacion de las entidades mediante el comando
   
-  ```
+  ```  
+  php bin/console doctrine:database:create
   php bin/console make:entity
   ```
   Nos pedira ingresar nombre, variables, tipo de datos, etc.
