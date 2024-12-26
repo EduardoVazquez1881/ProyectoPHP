@@ -29,6 +29,12 @@
 
   # Conexion
   En este caso usaremos mysql, tenemos que configurar el archivo .env, buscamos la opcion de "DATABASE_URL" y descomentamos la de nuestra base de datos. Modificamos el nombre de usuario, contraeña y el nombre de la base de datos.
+  Tambien es necesario que en el archivo de configuracion php, tenemos que habilitar las siguientes opciones.
+  ```
+  extension=mysqli
+  extension=openssl
+  extension=pdo_mysql
+  ```
 
   # Entidades 
   Comenzamos con la creacion de las entidades mediante el comando
