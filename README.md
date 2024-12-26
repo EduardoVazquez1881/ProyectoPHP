@@ -46,8 +46,9 @@
   Nos pedira ingresar nombre, variables, tipo de datos, etc.
 
   # Creacion de usuarios
+  ```
   php bin/console make:user
-  
+  ```
 
   # Migraciones
   Despues de crear las entidades, debemos de comenzar generando las migraciones
