@@ -1,0 +1,32 @@
+ <div class="bg-gradient-to-t from-blue-950 to-orange-100 min-h-screen">
+    <nav class="border-b-2 border-black p-8 shadow-lg backdrop-blur-xl">
+        <div class="mx-auto max-w-8xl flex justify-between">
+            <div class="font-bold text-3xl"> Logo </div>
+            <div class="flex space-x-8 my-2 text-lg">
+
+                <a href="" class="hover:text-orange-600 hover:scale-105 transition-all">Inicio</a>
+
+                <div class="relative group">
+                    <a href="" class="hover:text-orange-600 cursor-pointer hover:scale-105 transition-all">Categorias</a>
+                    <div class="absolute hidden group-hover:block bg-white p-4 shadow-lg rounded-lg w-auto">
+                        <a href="" class="block hover:text-orange-600 hover:scale-105 transition-all">Categoria</a> 
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    {% if app.user %}
+                        <img style="height: 42px; width: 42px;" class="rounded-full hover:scale-105 transition-all " src="https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png" alt="Perfil">
+                        <div class="absolute hidden group-hover:block bg-white p-4 shadow-lg rounded-lg">
+                            <a href="{{ path('app_logout') }}" class="block hover:text-orange-600 hover:scale-105 transition-all">Cerrar</a> 
+                        </div>
+                    {% else %}
+                    <a href="" class="hover:text-orange-600 hover:scale-105 transition-all"> Login </a>
+                        <div class="absolute hidden group-hover:block bg-white p-4 shadow-lg rounded-lg">
+                            <a href="" class="block hover:text-orange-600 hover:scale-105 transition-all">Iniciar</a> 
+                        </div>    
+                    {% endif %}
+                </div>        
+            </div>
+        </div>  
+    </nav>
+

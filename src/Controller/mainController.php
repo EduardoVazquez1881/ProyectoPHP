@@ -16,7 +16,4 @@ class mainController extends AbstractController
             "mensaje"=> "HolaMundo",
         ]);
     }
-
-
-    #[Route("/")]
 }

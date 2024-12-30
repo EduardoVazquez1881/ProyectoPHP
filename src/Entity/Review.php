@@ -27,7 +27,7 @@ class Review
     private ?\DateTimeInterface $fecha = null;
 
     #[ORM\ManyToOne(inversedBy: 'reviews')]
-    private ?Usuario $usuario_id = null;
+    private ?User $usuario_id = null;
 
     #[ORM\ManyToOne(inversedBy: 'reviews')]
     private ?Juego $juego_id = null;
@@ -85,12 +85,12 @@ class Review
         return $this;
     }
 
-    public function getUsuarioId(): ?Usuario
+    public function getUsuarioId(): ?User
     {
         return $this->usuario_id;
     }
 
-    public function setUsuarioId(?Usuario $usuario_id): static
+    public function setUsuarioId(?User $usuario_id): static
     {
         $this->usuario_id = $usuario_id;
 

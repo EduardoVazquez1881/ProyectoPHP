@@ -11,6 +11,9 @@
         {% endblock %}
     </head>
     <body>
+        {% block header %} 
+            {% include "nav.html.twig" %}
+        {% endblock %}
         {% block body %}
         <h1 class="text-2xl bg-yellow-400"> {{ mensaje }} </h1>
         {% endblock %}
